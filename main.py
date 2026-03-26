@@ -10,9 +10,9 @@ from keep_alive import keep_alive
 # ============================================================
 #  CONFIG — Yahan apni real values daalo
 # ============================================================
-BOT_TOKEN       = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
-TASKS_CHANNEL_ID = 0          # 👈 #tasks channel ka ID daalo (number)
-ADMIN_ROLE_ID    = 0          # 👈 Admin role ka ID daalo (number)
+BOT_TOKEN        = os.environ.get("BOT_TOKEN")
+TASKS_CHANNEL_ID = int(os.environ.get("TASKS_CHANNEL_ID", 0))
+ADMIN_ROLE_ID    = int(os.environ.get("ADMIN_ROLE_ID", 0))
 COOLDOWN_MINUTES = 5
 # ============================================================
 
